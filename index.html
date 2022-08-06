@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
     <title>Document</title>
@@ -14,73 +15,203 @@
     <div class="wrapper">
 <!--Section header-->
         <header class="wrap">
-            <div class="logotype"></div>
-            <div class="navig">
-                <ul class="navig-list">
-                    <li class="navig-item">
-                        <a href="#">
-
-                    </a></li>
-                    <li class="navig-item">
-                        <a href="#">
-
-                    </a></li>
-                    <li class="navig-item">
-                        <a href="#">
-
-                    </a></li>
-                    <li class="navig-item">
-                        <a href="#">
-
-                    </a></li>
-                    <li class="navig-item">
-                        <a href="#">
-
-                    </a></li>
-                </ul>
-            </div>
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <div class="logotype">
+                        <img src="img/logo-circle.png" alt="logo" class="logo-circle">
+                    </div>
+                    <div class="logotype_add">
+                        <span class="logotype_top">GRYSHCHUK</span>
+                        <hr class="logotype_hr">
+                        <span class="logotype_bot">Medical Devices</span>
+                    </div>
+                  
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Method</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          News
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Contacts
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Another action</a></li>
+                          <li class="dropdown-li"><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                    <!-- <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form> -->
+                  </div>
+                  <span class="icon-menu">
+                    
+                  </span>
+                </div>
+              </nav>
+            
             <div class="grid-menu"></div>
         </header>
+        <hr>
 <!--Section slider-->
         <div class="slider">
-
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/slider-img1.png" class="d-block w-100" alt="slider1">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider-img2.png" class="d-block w-100" alt="slider2">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/slider-img3.png" class="d-block w-100" alt="slider3">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </div>
 <!--Section presenting products-->
         <div class="product">
-            <ul class="product-list">
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-                <li class="product-list__item">
-                    <a href="#">
-
-                    </a></li>
-            </ul>
+            <div class="contain">
+                <div class="row">
+                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                        <section>
+                            <a href="#"><img src="img/product1.png" alt="Product_1" class="product-img"></a>
+                            <div class="context">
+                                <div class="heading">
+                                    <h2>Put something here</h2>
+                                    <p>Maybe here as well I think</p>
+                                </div>
+                                <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+                                     Praesent sed semper amet bibendum tristique fringilla.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                        <section>
+                            <a href="#"><img src="img/product2.png" alt="Product_2" class="product-img"></a>
+                            <div class="context">
+                                <div class="heading">
+                                    <h2>An interesting title</h2>
+                                    <p>This is also an interesting subtitle</p>
+                                </div>
+                                <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                        <section>
+                            <a href="#"><img src="img/product3.png" alt="Product_3" class="product-img"></a>
+                            <div class="context">
+                                <div class="heading">
+                                    <h2>Oh, and finally ...</h2>
+                                    <p>Here's another intriguing subtitle</p>
+                                </div>
+                                <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus. Praesent sed semper amet bibendum tristique fringilla.</p>
+                            </div>
+                        </section>
+                    </div>
+                    <div class=" col-sm-12 col-md-6 col-lg-6">
+                      <section>
+                          <a href="#"><img src="img/product4.png" alt="Product_4" class="product-img"></a>
+                          <div class="context">
+                              <div class="heading">
+                                  <h2>Put something here</h2>
+                                  <p>Maybe here as well I think</p>
+                              </div>
+                              <p>Phasellus quam turpis, feugiat sit amet in, hendrerit in lectus.
+                                   Praesent sed semper amet bibendum tristique fringilla.</p>
+                          </div>
+                      </section>
+                  </div>
+                </div>
+            </div>
         </div>
-<!--Section customer, oportunity...-->
-        <div class="quality">
 
-        </div>
 <!--Section specialists-->
         <div class="staff-block">
-
+          <div class="row">
+            <div class="col-lg-6">
+              <img src="" alt="">
+            </div>
+            <div class="col-lg-6">
+              <div class="naccs">
+                <div class="grid">
+                    <div class="gc tabs">
+                        <div class="menu">
+                            <div class="active"><span class="light"></span><span class="tab_name">Tab1</span></div>
+                            <div><span class="light"></span><span class="tab_name">Tab2</span></div>
+                            <div><span class="light"></span><span class="tab_name">Tab3</span></div>
+                        </div>
+                    </div>
+                    <div class="gc article">
+                        <ul class="nacc">
+                            <li class="active">
+                                <div>
+                                    <p>Insurance. Take insurance just in 5 minutes. Drop us: information about country, holiday terms and birthdate and we will find you the most reasonable deal with tour operator.</p>
+                                    <p>Treatment abroad. We are engaged in the selection of clinics and the search for specialized doctors abroad. So tour resort is in safe.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>Get an oportunity to visit 128 countries all around the world. From Canada to Antarctica, from tropic forest of Indonesia to beatiful beaches in Chile, from far east to ancient Europe. Feel like the world is at a glance. </p>
+                                    <p>Language practice. Our agency provides you trial lesson of language with native speaker, some useful advices and apps on your smartphone to make asimilation abroad easier. Know the language you need!</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>Contact us several times and you will take some bonuses. Free lessons of language and culture on your choise. Find information about our clients via menu.</p>
+                                    <p>Special prices. Book in advance - take a discount on accommodation or tickets. Make our work easier and we will reciprocate you.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
         </div>
 <!--Section diagrams, *donate integration*, graphs...-->
         <div class="analitics">
@@ -88,54 +219,94 @@
         </div>
 <!--Section contacts, messengers, blogs...-->
         <aside class="contact">
-
+          <div class="row">
+            <div class="column-quadra">
+              <div class="footerBlock col-3">
+                  <div class="link twitter">
+                      <a href="#">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                      </a>
+                  </div> 
+              </div>
+          </div>
+          <div class="column-quadra">
+              <div class="footerBlock col-3">
+                  <div class="link whatsApp">
+                      <a href="#">
+                          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                      </a>
+                  </div> 
+              </div>
+          </div>
+          <div class="column-quadra">
+              <div class="footerBlock col-3">
+                  <div class="link youTube">
+                      <a href="#">
+                          <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                      </a>
+                  </div> 
+              </div>
+          </div>
+          <div class="column-quadra">
+              <div class="footerBlock col-3">
+                  <p class="footerText">
+                      &copy; Some text
+                  </p>
+              </div>
+          </div>
+          </div>
         </aside>
 <!--Section footer, information lists, bottom logo...-->
         <footer class="footer wrap">
-            <div class="footer_topline">
+            <div class="row">
+              <section class="col-3">
                 <ul class="footer-list">
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                </ul>
+                  <li class="footer-list__item"><a href="#">Link1</a></li>
+                  <li class="footer-list__item"><a href="#">Link2</a></li>
+                  <li class="footer-list__item"><a href="#">Link3</a></li>
+                  <li class="footer-list__item"><a href="#">Link4</a></li>
+                  <li class="footer-list__item"><a href="#">Link5</a></li>
+              </ul>
+              </section>
+              <section class="col-3">
                 <ul class="footer-list">
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                </ul>
+                  <li class="footer-list__item"><a href="#">Link1</a></li>
+                  <li class="footer-list__item"><a href="#">Link2</a></li>
+                  <li class="footer-list__item"><a href="#">Link3</a></li>
+                  <li class="footer-list__item"><a href="#">Link4</a></li>
+                  <li class="footer-list__item"><a href="#">Link5</a></li>
+              </ul>
+              </section>
+              <section class="col-3">
                 <ul class="footer-list">
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                </ul>
+                  <li class="footer-list__item"><a href="#">Link1</a></li>
+                  <li class="footer-list__item"><a href="#">Link2</a></li>
+                  <li class="footer-list__item"><a href="#">Link3</a></li>
+                  <li class="footer-list__item"><a href="#">Link4</a></li>
+                  <li class="footer-list__item"><a href="#">Link5</a></li>
+              </ul>
+              </section>
+              <section class="col-3">
                 <ul class="footer-list">
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                </ul>
-                <ul class="footer-list">
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                    <li class="footer-list__item"><a href="#"></a></li>
-                </ul>
+                  <li class="footer-list__item"><a href="#">Link1</a></li>
+                  <li class="footer-list__item"><a href="#">Link2</a></li>
+                  <li class="footer-list__item"><a href="#">Link3</a></li>
+                  <li class="footer-list__item"><a href="#">Link4</a></li>
+                  <li class="footer-list__item"><a href="#">Link5</a></li>
+              </ul>
+              </section>  
             </div>
             <div class="footer_botline">
-                <div class="logotype"></div>
+              <div class="logotype">
+                <img src="img/logo-circle.png" alt="logo" class="logo-circle">
+            </div>
 
             </div>
         </footer>
 
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
